@@ -2878,7 +2878,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:L78L33_TO92"
+		(symbol "Regulator_Linear:LM7805_TO220"
 			(pin_names
 				(offset 0.254)
 			)
@@ -2893,7 +2893,7 @@
 					)
 				)
 			)
-			(property "Value" "L78L33_TO92"
+			(property "Value" "LM7805_TO220"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -2902,7 +2902,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 				(at 0 5.715 0)
 				(effects
 					(font
@@ -2912,7 +2912,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf"
+			(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
 				(at 0 -1.27 0)
 				(effects
 					(font
@@ -2921,7 +2921,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 100mA 30V Linear Regulator, Fixed Output 3.3V, TO-92"
+			(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2930,7 +2930,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 100mA Positive"
+			(property "ki_keywords" "Voltage Regulator 1A Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2939,7 +2939,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "TO?220*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2948,10 +2948,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "L78L33_TO92_0_1"
+			(symbol "LM7805_TO220_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2961,7 +2961,7 @@
 					)
 				)
 			)
-			(symbol "L78L33_TO92_1_1"
+			(symbol "LM7805_TO220_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -2972,7 +2972,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3008,7 +3008,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7153,6 +7153,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:LM7805_TO220")
+		(at 240.03 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f33d023-d562-48f4-a963-b0c3a640c126")
+		(property "Reference" "U3"
+			(at 240.03 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BA033CC0T_TO220"
+			(at 240.03 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 240.03 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
+			(at 240.03 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
+			(at 240.03 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdfbda10-d096-4987-a951-f76ca0f01577")
+		)
+		(pin "3"
+			(uuid "a9a42e5d-4a7d-4701-abc2-dc406618079d")
+		)
+		(pin "2"
+			(uuid "48e214f2-4a78-4f33-81dc-164c0dc5fd65")
+		)
+		(instances
+			(project ""
+				(path "/3ff58839-42d9-41e5-8791-30721827b8bc"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Interface_USB:CH340K")
 		(at 146.05 156.21 0)
 		(unit 1)
@@ -7268,7 +7340,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 149.8663 132.08 90)
 			(effects
 				(font
@@ -7640,78 +7712,6 @@
 			(project "ColorTimer-ESP12F"
 				(path "/3ff58839-42d9-41e5-8791-30721827b8bc"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:L78L33_TO92")
-		(at 240.03 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3397cf1e-947a-47e8-9c3d-1de738fe10a1")
-		(property "Reference" "U3"
-			(at 240.03 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L78L33_TO92"
-			(at 240.03 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
-			(at 240.03 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf"
-			(at 240.03 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 100mA 30V Linear Regulator, Fixed Output 3.3V, TO-92"
-			(at 240.03 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "4d8d72ea-0b8a-4854-a2c1-904874747bcd")
-		)
-		(pin "2"
-			(uuid "96e24eb6-8c26-45b5-a592-2d0357da3edf")
-		)
-		(pin "1"
-			(uuid "8eb484de-3619-4894-97be-45d657210514")
-		)
-		(instances
-			(project ""
-				(path "/3ff58839-42d9-41e5-8791-30721827b8bc"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -8300,7 +8300,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical"
+		(property "Footprint" "AE:AE-USB-MICRO-B-D"
 			(at 134.62 182.88 0)
 			(effects
 				(font
@@ -8525,7 +8525,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 			(at 218.44 48.895 0)
 			(effects
 				(font
@@ -8671,7 +8671,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 			(at 218.44 62.865 0)
 			(effects
 				(font
@@ -9483,7 +9483,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22u"
 			(at 244.856 121.158 0)
 			(effects
 				(font

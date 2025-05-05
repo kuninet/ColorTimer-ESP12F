@@ -58,7 +58,32 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "malformed_courtyard|105484000|48234000|506f3710-e684-492d-a01b-593955ac56cd|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "malformed_courtyard|105492000|40850000|506f3710-e684-492d-a01b-593955ac56cd|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "malformed_courtyard|121486000|40868000|506f3710-e684-492d-a01b-593955ac56cd|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "malformed_courtyard|153390000|49500000|99040565-472d-4077-9861-b8a42ee735b7|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "malformed_courtyard|166390000|49480000|99040565-472d-4077-9861-b8a42ee735b7|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|109040000|64871000|ab7a37f6-ef82-4e10-9822-8b9b2b2ba72a|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -497,7 +522,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3
       }
@@ -515,6 +540,14 @@
       {
         "netclass": "BOLD",
         "pattern": "+3.3V"
+      },
+      {
+        "netclass": "BOLD",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "BOLD",
+        "pattern": "VCC"
       }
     ]
   },
@@ -522,7 +555,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "./",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "ColorTimer-ESP12F.dsn",
