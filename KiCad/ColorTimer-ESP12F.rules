@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1091)
+    (start_pass_no 1811)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -71,9 +71,8 @@
   (class "kicad_default"
     "unconnected-(U1-SCLK-Pad22)" "Net-(D1-A)" "Net-(D2-A)" "unconnected-(U1-MISO-Pad18)" "unconnected-(U1-CS0-Pad17)" "unconnected-(U1-GPIO9-Pad19)" /GPIO14 /ADC
     /GPIO13 "unconnected-(U1-MOSI-Pad21)" /GPIO5 "unconnected-(U1-GPIO10-Pad20)" /GPIO4 /GPIO12 /GPIO16 "Net-(U1-REST)"
-    "Net-(U1-GPIO15)" "Net-(U1-GPIO2)" EN "Net-(D3-A)" "Net-(J2-VBUS)" "unconnected-(J2-ID-Pad4)" "Net-(J2-D-)" "Net-(J2-D+)"
-    "Net-(J3-Pin_2)" "unconnected-(J4-Pin_4-Pad4)" DTR RTS GPIO0 "unconnected-(SW4-C-Pad3)" RxD TxD
-    "unconnected-(U2-~{CTS}-Pad5)"
+    "Net-(U1-GPIO15)" "Net-(U1-GPIO2)" EN "Net-(D3-A)" "unconnected-(J2-ID-Pad4)" "Net-(J2-D-)" "Net-(J2-D+)" "Net-(J3-Pin_2)"
+    "unconnected-(J4-Pin_4-Pad4)" DTR RTS GPIO0 "unconnected-(SW4-C-Pad3)" RxD TxD "unconnected-(U2-~{CTS}-Pad5)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -84,7 +83,7 @@
     )
   )
   (class BOLD
-    GND +3.3V VCC +5V
+    GND +3.3V VCC +5V "Net-(J2-VBUS)"
     (clearance_class BOLD)
     (via_rule BOLD)
     (rule
