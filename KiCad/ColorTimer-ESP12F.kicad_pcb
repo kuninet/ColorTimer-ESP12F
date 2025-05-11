@@ -3502,7 +3502,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "1k"
 			(at 5.08 1.37 0)
 			(layer "F.Fab")
 			(uuid "760b517b-a1e7-4624-b682-72f1c534b9f7")
@@ -11650,7 +11650,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "330"
+	(gr_text "1k"
 		(at 152.33 42.89 0)
 		(layer "F.SilkS")
 		(uuid "736754d8-426f-4f29-aab9-2808a7d26bdf")
