@@ -3287,6 +3287,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 133.35) (xy 105.41 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08f10f18-06a7-439f-acfc-c076ce6a424a")
+	)
+	(wire
+		(pts
 			(xy 160.02 54.61) (xy 160.02 83.82)
 		)
 		(stroke
@@ -4597,7 +4607,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 119.38) (xy 105.41 130.81)
+			(xy 105.41 119.38) (xy 105.41 128.27)
 		)
 		(stroke
 			(width 0)
@@ -7415,6 +7425,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 105.41 130.81 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e5051d0-318f-4efc-8c8a-cb0e395cf978")
+		(property "Reference" "R6"
+			(at 107.95 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 107.95 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b05aacb3-9ae1-40da-9c74-ba567877e7c3")
+		)
+		(pin "2"
+			(uuid "b0d30f7a-6d15-489b-a722-5ba0b60743f3")
+		)
+		(instances
+			(project "ColorTimer-ESP12F"
+				(path "/3ff58839-42d9-41e5-8791-30721827b8bc"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ESP8266Lib:ESP-12F")
 		(at 116.84 54.61 0)
 		(unit 1)
@@ -8575,7 +8655,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 105.41 130.81 0)
+		(at 105.41 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8584,7 +8664,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5756364-93fe-4458-86a0-356762233ea2")
 		(property "Reference" "#PWR010"
-			(at 105.41 137.16 0)
+			(at 105.41 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8593,7 +8673,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 135.89 0)
+			(at 105.41 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8601,7 +8681,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 130.81 0)
+			(at 105.41 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8610,7 +8690,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 130.81 0)
+			(at 105.41 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8619,7 +8699,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 130.81 0)
+			(at 105.41 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
